@@ -36,6 +36,7 @@ To ensure continuous progress and adaptation, I will:
 - **Identify Trends**: Look for patterns in productivity, challenges, and adherence to principles.
 - **Prioritize with Eisenhower Matrix**: After identifying trends, suggest and re-arrange priorities for future tasks using the Eisenhower Matrix (Urgent/Important, Important/Not Urgent, Urgent/Not Important, Not Urgent/Not Important).
 - **Inform Future Planning**: Use insights from this analysis to refine future daily plans, adjust strategies, and provide guidance for better goal alignment and leveraging power principles.
+- **Huberman Routine Comparison**: Compare daily activities against the Huberman Lab Daily Routine Principles to identify adherence and areas for improvement.
 
 ## Planning Guidelines
 
@@ -60,6 +61,9 @@ Analyze progress against current month goals located in `/Users/r/Documents/pers
 ## Daily Pattern Analysis & Goal Alignment
 
 [Populate with observed trends and how daily activities align with goals]
+
+### Huberman Routine Adherence & Suggestions
+[Compare daily activities with Huberman Lab Daily Routine Principles and suggest adjustments]
 
 ## Guiding Principles (pin to the top)
 

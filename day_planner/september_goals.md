@@ -15,6 +15,15 @@ This document captures the intended goals for September 2025 Planning
 - Meditation - 1 hour blocks
 - Spiritual - Candle lights and prayer
 
+### Huberman Routine Integration
+- Consistent morning sunlight exposure (10-30 min)
+- Hydration upon waking (500-1000ml water with electrolytes)
+- Delay caffeine intake (90-120 min after waking)
+- Incorporate NSDR/Meditation daily (10-30 min)
+- Optimize evening light exposure (minimize blue light 3 hours before bed)
+- Maintain consistent sleep schedule
+- Integrate deliberate cold exposure (e.g., cold showers)
+
 ## Family and Friends
 
 - Send token gifts to Wife and Kid
