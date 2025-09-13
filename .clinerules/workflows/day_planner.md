@@ -31,9 +31,10 @@ Always review and assess positively what went right the previous day and what co
 ## Daily Pattern Analysis & Goal Alignment
 
 To ensure continuous progress and adaptation, I will:
-- **Review Previous Daily Checklists**: Regularly analyze completed daily checklists from `/Users/r/Documents/personal/day_planner` to identify recurring patterns, successes, and areas for improvement.
+- **Review All Previous Daily Checklists**: Systematically analyze all completed daily checklists from `/Users/r/Documents/personal/day_planner` to identify recurring patterns, successes, and areas for improvement across all recorded days.
 - **Track Progress Against Goals**: Assess how daily activities contribute to short-term and long-term goals (as defined in `september_goals.md` or similar monthly goal files).
 - **Identify Trends**: Look for patterns in productivity, challenges, and adherence to principles.
+- **Prioritize with Eisenhower Matrix**: After identifying trends, suggest and re-arrange priorities for future tasks using the Eisenhower Matrix (Urgent/Important, Important/Not Urgent, Urgent/Not Important, Not Urgent/Not Important).
 - **Inform Future Planning**: Use insights from this analysis to refine future daily plans, adjust strategies, and provide guidance for better goal alignment and leveraging power principles.
 
 ## Planning Guidelines
@@ -44,7 +45,7 @@ To ensure effective and focused daily planning:
 
 ## Current Month Goals
 
-Get current month goals located in `/Users/r/Documents/personal/day_planner`. Use code to accurately determine the current month.
+Analyze progress against current month goals located in `/Users/r/Documents/personal/day_planner` and relate daily activities to these goals. Use code to accurately determine the current month.
 
 ---
 
@@ -54,7 +55,7 @@ Get current month goals located in `/Users/r/Documents/personal/day_planner`. Us
 
 ## Current Month Goals
 
-[Populate with goals from september_goals.md or similar]
+[Analyze progress and relate to monthly goals from september_goals.md or similar]
 
 ## Daily Pattern Analysis & Goal Alignment
 
