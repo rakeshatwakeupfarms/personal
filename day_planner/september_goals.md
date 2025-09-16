@@ -27,7 +27,9 @@ This document captures the intended goals for September 2025 Planning
 ## Family and Friends
 
 - Send token gifts to Wife and Kid
+  [x] Sent a novel to Himaja 
 - Speak to friends and get in touch with them (list friends)
+  [x] Sent messages to Aslesh and Swaroop and wishes to Stan marius. In sync with Parthu and Praveen.
 
 ## Office Work
 
