@@ -31,17 +31,20 @@ Always review and assess positively what went right the previous day and what co
 ## Daily Pattern Analysis & Goal Alignment
 
 To ensure continuous progress and adaptation, I will:
-- **Review All Previous Daily Checklists**: Systematically analyze all completed daily checklists from `/Users/r/Documents/personal/day_planner` to identify recurring patterns, successes, and areas for improvement across all recorded days.
-- **Track Progress Against Goals**: Assess how daily activities contribute to short-term and long-term goals (as defined in `september_goals.md` or similar monthly goal files).
-- **Identify Trends**: Look for patterns in productivity, challenges, and adherence to principles.
+- **Review All Previous Daily Checklists**: MANDATORY - Systematically read and analyze ALL completed daily checklists from `/Users/r/Documents/personal/day_planner` using the `list_files` and `read_file` tools. This analysis must identify recurring patterns, successes, and areas for improvement across all recorded days. Do not skip this step.
+- **Track Progress Against Goals**: MANDATORY - Read and assess how daily activities contribute to short-term and long-term goals (as defined in `september_goals.md` or similar monthly goal files using `read_file`). Do not skip this step.
+- **Identify Trends**: Look for patterns in productivity, challenges, and adherence to principles across ALL previous days.
 - **Prioritize with Eisenhower Matrix**: After identifying trends, suggest and re-arrange priorities for future tasks using the Eisenhower Matrix (Urgent/Important, Important/Not Urgent, Urgent/Not Important, Not Urgent/Not Important).
-- **Inform Future Planning**: Use insights from this analysis to refine future daily plans, adjust strategies, and provide guidance for better goal alignment and leveraging power principles.
+- **Inform Future Planning**: Use insights from this comprehensive analysis to refine future daily plans, adjust strategies, and provide guidance for better goal alignment and leveraging power principles.
 - **Huberman Routine Comparison**: Compare daily activities against the Huberman Lab Daily Routine Principles to identify adherence and areas for improvement.
 
 ## Planning Guidelines
 
 To ensure effective and focused daily planning:
-- **Task Schedule Start**: Always assume the current timestamp of the first request for a daily plan is the start of the task schedule.
+- **Task Schedule Start**: CRITICAL - Always assume the current timestamp of the first request for a daily plan is the START of the user's day and the earliest time for scheduling any tasks. NO tasks should be scheduled before this timestamp. NO tasks should be assumed completed unless explicitly stated by the user.
+- **Current Time as Day Start**: If the user requests a daily plan at 8:59 AM, then 8:59 AM becomes the start time and all tasks must be scheduled from 8:59 AM onwards.
+- **No Past Tasks**: Do not schedule any tasks in the past (before the current timestamp). Do not mark any tasks as completed unless explicitly told they are already done.
+- **No Overlapping Tasks**: CRITICAL - Ensure that no scheduled tasks have overlapping time slots. Each task must have a distinct start and end time that does not conflict with any other scheduled task.
 - **Task Limit**: Limit the number of core tasks (excluding Health Management, Personal Finance, Mindset & Spirituality, and Environment & Routine) to a maximum of 5 per day to maintain focus and prevent overload.
 
 ## Current Month Goals
