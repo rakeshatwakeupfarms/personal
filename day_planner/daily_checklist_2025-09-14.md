@@ -26,16 +26,28 @@ This task aligns with your monthly goal to "Write agentic workflows for retry" a
 ## Minimized Tasks for Today
 
 ### 💪 Health Management
+
 - [ ] 15k steps → **Goggins / Callus the Mind**
-- [ ] Drink 2 L water (1 L by lunch, 2 L by dinner) → **Naval**
-- [x] 90 minutes of attempted meditation 
-   - I was in a state of trans, did not know if it was sleep or relaxation, but i knew that i need that 90 minutes, i was extremely tiered mentally for some reason. 
+  - Did not do as it was heavily raining and later in the evening did not go out. Planning to definitely get this done Monday.
+- [x] Drink 2 L water (1 L by lunch, 2 L by dinner) → **Naval**
+- [x] 90 minutes of attempted meditation
+  - I was in a state of trans, did not know if it was sleep or relaxation, but i knew that i need that 90 minutes, i was extremely tiered mentally for some reason.
 
 ### ⛏ Startup – WakeupFarms
+
 - [ ] Draft a LinkedIn Article on Agentic AI → **Godin / Self-Presentation & Brand**
 
 ### 🧘♂️ Mindset & Spirituality
+
 - [ ] Evening journal: biggest needle-mover & lesson → **Dalio Reflection Loop**
 
 ### 🗂 Environment & Routine
-- [ ] Throw away 3 items → **Minimalism**
+
+- [x] Throw away 3 items → **Minimalism**
+  - plastic lid, Giveaway stool chair potty trainer, torn clothes
+
+Day Reflection
+
+I worked mostly on understading agentic behaviour with Gemini ADK api. My strength is always the application, I will take time to understand the
+frameworks and once i understand it, my application for the frameworks will easy out 100x as i believe in building tools. I pondered on Permaculture
+as well and its always close to heart. Other few things that i should probably work on are reading books and doing some permaculture and backyard cleaning , its not done yet but thats something that we need consider.

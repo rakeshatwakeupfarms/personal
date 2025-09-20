@@ -58,24 +58,29 @@
 - Self-Presentation & Brand (Pfeffer)
 - Reputation Building (Pfeffer)
 
+## 📈 Intraday Trading
+
+- [ ] **Alpaca AI Agent Tools**: 09:25-11:00 Research Alpaca API, identify key endpoints, and begin writing initial tools for intraday trading → **Leverage & Compounding / Deep Work**
+    - *Pfeffer Power Principle: Strategic Influence* - How can developing AI trading agents enhance my financial autonomy and influence in personal finance?
+
 ## ⛏ Startup – WakeupFarms
 
-- [ ] **AI Agents Coding**: 09:32-11:32 Deep work session on agentic workflow coding → **Deep Work / Naval Leverage**
+- [ ] **AI Agents Coding**: 11:00-13:00 Deep work session on agentic workflow coding → **Deep Work / Naval Leverage**
     - *Pfeffer Power Principle: Strategic Influence* - How can advanced AI capabilities position me as a technical leader in the automation space?
-- [ ] **WakeupFarms Workflow Finalization**: 12:02-13:02 Complete workflow documentation and testing → **Atomic Habits / Godin**
+- [ ] **WakeupFarms Workflow Finalization**: 13:00-14:00 Complete workflow documentation and testing → **Atomic Habits / Godin**
     - *Pfeffer Power Principle: Reputation Building* - How does systematic workflow documentation demonstrate my thoroughness and technical competence?
-- [ ] Daily 30-min NRFC agent sprint (15:57-16:27 protect calendar lock) → **Atomic Habits / Deep Work**
+- [ ] Daily 30-min NRFC agent sprint (16:00-16:30 protect calendar lock) → **Atomic Habits / Deep Work**
     - *Pfeffer Power Principle: Strategic Influence* - How does consistent progress on this task build internal credibility?
 - [ ] **Blog Article**: 20:00-21:00 Write technical blog post on AI agent development → **Godin / Naval**
     - *Pfeffer Power Principle: Reputation Building* - How does sharing technical insights publicly establish thought leadership?
 
 ## 🛠 Full-Time Career – Network Engineering
 
-- [ ] **NRE Documentation Sprint**: 13:57-14:57 Create skeleton document for NRE packet flow (critical gap) → **Atomic Habits / Radical Transparency**
+- [ ] **NRE Documentation Sprint**: 14:00-15:00 Create skeleton document for NRE packet flow (critical gap) → **Atomic Habits / Radical Transparency**
     - *Pfeffer Power Principle: Reputation Building* - How does proactive documentation build reputation for thoroughness in critical areas?
-- [ ] Follow up on DRCC Gateway policies meeting outcomes: 14:57-15:12 → **Strategic Influence**
+- [ ] Follow up on DRCC Gateway policies meeting outcomes: 15:00-15:15 → **Strategic Influence**
     - *Pfeffer Power Principle: Strategic Influence* - How can I leverage meeting insights to influence project direction?
-- [ ] Plan Butterfly project next steps based on identified blockers: 15:12-15:27 → **Pre-Mortem Thinking**
+- [ ] Plan Butterfly project next steps based on identified blockers: 15:15-15:30 → **Pre-Mortem Thinking**
     - *Pfeffer Power Principle: Self-Presentation & Brand* - How does proactive problem-solving enhance my technical brand?
 
 ## 💪 Health Management
@@ -84,20 +89,20 @@
     - *Pfeffer Power Principle: Self-Presentation & Brand* - How does disciplined morning routine project confidence and energy?
     - 8.0 and took AG1 , sat in coffee shop near window and had good sunlight.
 - [ ] **Structured Walking**: 15k steps across 3 sessions (5k each) → **Goggins / When**
-    - Session 1 (11:32-12:02): Morning energizer walk
-    - Session 2 (13:27-13:57): Post-lunch digestive walk
-    - Session 3 (17:07-17:37): Evening reflection walk
+    - Session 1 (11:00-11:30): Morning energizer walk (Adjusted to fit after Alpaca task)
+    - Session 2 (13:30-14:00): Post-lunch digestive walk
+    - Session 3 (17:00-17:30): Evening reflection walk
     - *Pfeffer Power Principle: Callus the Mind* - How does structured movement build mental resilience?
 - [x] Delay caffeine intake 90 minutes after waking → **Huberman**
     - Done 
-- [ ] Prep high-fiber lunch + pre-portioned snacks: 13:02-13:17 → **Atomic Habits**
+- [ ] Prep high-fiber lunch + pre-portioned snacks: 13:00-13:15 → **Atomic Habits**
 - [ ] Drink 2.5L water (track: 500ml by 10am, 1.5L by 1pm, 2.5L by 7pm) → **Naval**
-- [ ] **30-min meditation minimum**: 16:37-17:07 (with optional extension to 60min) → **Deep Work / When**
+- [ ] **30-min meditation minimum**: 16:30-17:00 (with optional extension to 60min) → **Deep Work / When**
     - *Pfeffer Power Principle: Self-Presentation & Brand* - How does mindfulness practice enhance my ability to project calm authority?
 
 ## 💰 Personal Finance
 
-- [ ] Brew coffee at home (after 90min wake delay); move €2.50 to "Microgreens Fund" vault: 13:17-13:27 → **Atomic Habits**
+- [ ] Brew coffee at home (after 90min wake delay); move €2.50 to "Microgreens Fund" vault: 13:15-13:25 → **Atomic Habits**
     - *Pfeffer Power Principle: Leverage & Compounding* - How do small financial habits compound to create greater resource control?
 - [ ] Evening ledger entry: today's spend vs budget: 21:00-21:15 → **Radical Transparency**
     - *Pfeffer Power Principle: Radical Transparency* - How does financial clarity provide foundation for strategic decisions?
@@ -111,12 +116,13 @@
 
 ## 🗂 Environment & Routine
 
-- [ ] **Load and run dishwasher**: 09:22-09:32 (morning routine) → **Atomic Habits**
-- [ ] **Backyard cleaning**: 15:27-15:57 systematic cleanup and organization → **Atomic Habits / Minimalism**
+- [x] **Load and run dishwasher**: 09:22-09:32 (morning routine) → **Atomic Habits**
+    - Done
+- [ ] **Backyard cleaning**: 15:30-16:00 systematic cleanup and organization → **Atomic Habits / Minimalism**
     - *Pfeffer Power Principle: Self-Presentation & Brand* - How does maintaining organized environment reflect personal standards?
-- [ ] 10-min inbox/desktop declutter: 16:27-16:37 → **Atomic Habits**
+- [ ] 10-min inbox/desktop declutter: 17:30-17:40 → **Atomic Habits**
 - [ ] Minimize blue light exposure 3 hours before bed (19:00 onwards) → **Huberman**
-- [ ] Identify and discard 2-3 items for monthly minimalism goal: 17:37-17:47 → **Atomic Habits**
+- [ ] Identify and discard 2-3 items for monthly minimalism goal: 17:40-17:50 → **Atomic Habits**
 
 ## Pre-Mortem Risk Assessment
 

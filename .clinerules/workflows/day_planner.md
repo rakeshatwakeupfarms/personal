@@ -41,6 +41,11 @@ To ensure continuous progress and adaptation, I will:
 ## Planning Guidelines
 
 To ensure effective and focused daily planning:
+
+### Daily Schedule Automation Process
+- **Finalize and Sync Schedule**: Once the daily schedule is finalized in the `daily_checklist_YYYY-MM-DD.md` file, use the `schedule_day.py` script to add the tasks to your Google Calendar. This script will parse the checklist and create events for all scheduled items.
+- **Conflict Resolution**: Before finalizing, manually review the schedule for any potential conflicts. The `list_events.py` script can be used to retrieve the current day's schedule from Google Calendar to help identify potential overlaps.
+
 - **Task Schedule Start**: CRITICAL - Always assume the current timestamp of the first request for a daily plan is the START of the user's day and the earliest time for scheduling any tasks. NO tasks should be scheduled before this timestamp. NO tasks should be assumed completed unless explicitly stated by the user.
 - **Current Time as Day Start**: If the user requests a daily plan at 8:59 AM, then 8:59 AM becomes the start time and all tasks must be scheduled from 8:59 AM onwards.
 - **No Past Tasks**: Do not schedule any tasks in the past (before the current timestamp). Do not mark any tasks as completed unless explicitly told they are already done.

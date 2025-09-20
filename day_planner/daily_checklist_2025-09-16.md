@@ -54,9 +54,9 @@
 
 ### Huberman Routine Adherence & Suggestions
 
-- **Consistent morning sunlight exposure (10-30 min)**: Had AG1 and sat in front of Sunlight. 
-- **Hydration upon waking (500-1000ml water with electrolytes)**: Had 500ml of of AG1 multivitamin drink 
-- **Delay caffeine intake (90-120 min after waking)**: NA 
+- **Consistent morning sunlight exposure (10-30 min)**: Had AG1 and sat in front of Sunlight.
+- **Hydration upon waking (500-1000ml water with electrolytes)**: Had 500ml of of AG1 multivitamin drink
+- **Delay caffeine intake (90-120 min after waking)**: NA
 - **Incorporate NSDR/Meditation daily (10-30 min)**: Meditation was done yesterday. Aim for consistency and the recommended duration.
 - **Optimize evening light exposure (minimize blue light 3 hours before bed)**: Not explicitly noted. Suggest incorporating this into the evening routine.
 - **Maintain consistent sleep schedule**: Not explicitly noted. Important for overall energy.
@@ -78,45 +78,52 @@
 
 ## ⛏ Startup – WakeupFarms
 
-- [ ] AI Agentic workforce setup 1 hour → **Leverage & Compounding / Deep Work**
-    - *Pfeffer Power Principle: Strategic Influence* - How does consistent progress on agentic workforce setup build internal credibility and influence within the team and for WakeupFarms?
+- [x] AI Agentic workforce setup 1 hour → **Leverage & Compounding / Deep Work**
+  - _Pfeffer Power Principle: Strategic Influence_ - How does consistent progress on agentic workforce setup build internal credibility and influence within the team and for WakeupFarms?
+    Successfully created a agent and also deployed it. Also understood the priciples of curl and sessions. Next steps we will use sqlite db to persist sessions also we need to
+    understand if we can integrate sequential agent.
 
 ## 🛠 Full-Time Career – Network Engineering
 
-- [ ] Spend on butterfly project 1 hour sync → **Strategic Influence / Deep Work**
-    - *Pfeffer Power Principle: Strategic Influence* - How can I use this sync to highlight my contributions and influence key stakeholders on the Butterfly project?
-- [ ] Identify and update critical project blockers 15m → **Pre-Mortem Thinking / Radical Transparency**
-    - *Pfeffer Power Principle: Strategic Influence* - How does proactively identifying blockers enhance my reputation and influence project outcomes?
-- [ ] Make a list of blockers in the NBQ Page 15m → **Radical Transparency / Reputation Building**
-    - *Pfeffer Power Principle: Reputation Building* - How does clear documentation of blockers contribute to my professional reputation for thoroughness and problem-solving?
-- [ ] Work on EVPN Lab setup 1hour → **Deep Work / Callus the Mind**
-    - *Pfeffer Power Principle: Reputation Building* - How does consistent effort in building complex labs contribute to my reputation as a skilled network engineer?
+- [x] Spend on butterfly project 1 hour sync → **Strategic Influence / Deep Work**
+  - _Pfeffer Power Principle: Strategic Influence_ - How can I use this sync to highlight my contributions and influence key stakeholders on the Butterfly project?
+    Worked on it to list out what is missing, need code updates from other team. For now we are good.
+- [x] Identify and update critical project blockers 15m → **Pre-Mortem Thinking / Radical Transparency**
+  - _Pfeffer Power Principle: Strategic Influence_ - How does proactively identifying blockers enhance my reputation and influence project outcomes?
+- [x] Make a list of blockers in the NBQ Page 15m → **Radical Transparency / Reputation Building**
+  - _Pfeffer Power Principle: Reputation Building_ - How does clear documentation of blockers contribute to my professional reputation for thoroughness and problem-solving?
+    listed project blockers and next steps
+- [x] Work on EVPN Lab setup 1hour → **Deep Work / Callus the Mind**
+  - _Pfeffer Power Principle: Reputation Building_ - How does consistent effort in building complex labs contribute to my reputation as a skilled network engineer?
+    Did work on EVPN Lab, will try to lab it up again today.
 
 ## 💪 Health Management
 
-- [ ] walk 10k steps → **Goggins / Callus the Mind**
-    - *Pfeffer Power Principle: Callus the Mind* - How does this consistent effort build mental resilience that translates to other areas of my life?
-  [x] AG1 Multivitamin drink
-  [ ] Omega 3 Tablet 
+- [x] walk 10k steps → **Goggins / Callus the Mind**
+  - _Pfeffer Power Principle: Callus the Mind_ - How does this consistent effort build mental resilience that translates to other areas of my life?
+    went on a 3.85km walk yesterday
+    [x] AG1 Multivitamin drink
+    [x] Omega 3 Tablet - Took it during dinner time
 
 ## 💰 Personal Finance
 
-- [ ] Brew coffee at home; move €2.50 to “Microgreens Fund” vault → **Atomic Habits**
-    - *Pfeffer Power Principle: Leverage & Compounding* - How do small, consistent financial habits compound to create greater financial power and security?
-- [ ] Ledger entry: today’s spend vs budget → **Radical Transparency**
-    - *Pfeffer Power Principle: Radical Transparency* - How does clear financial tracking provide a foundation for informed decisions and greater control over resources?
+- [x] Brew coffee at home; move €2.50 to “Microgreens Fund” vault → **Atomic Habits**
+  - _Pfeffer Power Principle: Leverage & Compounding_ - How do small, consistent financial habits compound to create greater financial power and security?
+- [x] Ledger entry: today’s spend vs budget → **Radical Transparency**
+  - _Pfeffer Power Principle: Radical Transparency_ - How does clear financial tracking provide a foundation for informed decisions and greater control over resources?
 
 ## 🧘♂️ Mindset & Spirituality
 
-- [ ] 02:30 10-min meditation + write 3 gratitude lines → **When**
-    - *Pfeffer Power Principle: Self-Presentation & Brand* - How does a calm and focused mindset enhance my ability to present myself powerfully?
+- [x] 04:45pm-5:45pm 60-min meditation + write 3 gratitude lines → **When**
+  - _Pfeffer Power Principle: Self-Presentation & Brand_ - How does a calm and focused mindset enhance my ability to present myself powerfully?
 - [ ] 21:30 Evening journal: biggest needle-mover & lesson → **Dalio Reflection Loop**
-    - *Pfeffer Power Principle: Reputation Building* - How does continuous learning and reflection contribute to my intellectual capital and influence?
+  - _Pfeffer Power Principle: Reputation Building_ - How does continuous learning and reflection contribute to my intellectual capital and influence?
 
 ## 🗂 Environment & Routine
 
-- [ ] Work on Cline workflows 1hour → **Atomic Habits / Deep Work**
-    - *Pfeffer Power Principle: Strategic Influence* - How does consistent progress on Cline workflows build internal credibility and influence within the team?
+- [x] Work on Cline workflows 1hour → **Atomic Habits / Deep Work**
+  - _Pfeffer Power Principle: Strategic Influence_ - How does consistent progress on Cline workflows build internal credibility and influence within the team?
+    started working on this project and updated some documenation.
 
 ## One-Sentence Mantra
 

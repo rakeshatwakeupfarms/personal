@@ -108,55 +108,73 @@
 
 ## ⛏ Startup – WakeupFarms
 
-- [ ] Daily 30-min NRFC agent sprint (protect calendar lock) → **Atomic Habits / Deep Work**
+- [x] Daily 30-min NRFC agent sprint (protect calendar lock) → **Atomic Habits / Deep Work**
   - _Pfeffer Power Principle: Strategic Influence_ - How does consistent progress on this task build internal credibility and influence within the team?
-- [ ] Post one automation tip publicly (use demo above) → **Godin**
-  - _Pfeffer Power Principle: Reputation Building_ - How does sharing expertise publicly contribute to my reputation as an industry leader?
+- [x] Worked on Gemini AI to build a agent for switch status. If this is done,
+      It will smoothen the entire migration of WakeupFarms to another Cloud provider. → **Godin** - _Pfeffer Power Principle: Reputation Building_ - How does sharing expertise publicly contribute to my reputation as an industry leader?
 
 ## 🛠 Full-Time Career – Network Engineering
 
-- [ ] Schedule a meeting with IDC DRCC folks on intro and next steps for every Monday - 1 hour → **Strategic Influence**
+- [x] Schedule a meeting with IDC DRCC folks on intro and next steps for every Monday - 1 hour → **Strategic Influence**
+
   - _Pfeffer Power Principle: Strategic Influence_ - How can I effectively initiate this training to build rapport and influence the team's understanding?
-- [ ] Work on some butterfly documentation and improvement, list out some of the blockers - 1 hour → **Deep Work / Radical Transparency**
+
+- [x] Work on some butterfly documentation and improvement, list out some of the blockers - 1 hour → **Deep Work / Radical Transparency**
   - _Pfeffer Power Principle: Reputation Building_ - How does clear and thorough documentation enhance my professional reputation and influence project success?
+    I worked with Roshan and Taseen and divided some tasks for Gameday. Also helped
+    Roshan to get himself unblocked with SSH
 - [ ] Work on improving documentation for Cline onboarding - 1 hour → **Leverage & Compounding / Atomic Habits**
+
   - _Pfeffer Power Principle: Strategic Influence_ - How does streamlined onboarding documentation empower new team members and reflect positively on my leadership?
+
 - [ ] Work on Nocturnal project trends - 1 hour → **Deep Work / Pre-Mortem Thinking**
+
   - _Pfeffer Power Principle: Strategic Influence_ - How can analyzing trends provide insights to influence future project directions and mitigate risks?
-- [ ] EVPN building INE labs → **Deep Work / Callus the Mind**
+
+- [x] EVPN building INE labs → **Deep Work / Callus the Mind**
+  - Worked on INE Lab for EVPN
 
 ## 💪 Health Management
 
 - [ ] Walking for 15k steps (compulsory) → **Goggins / Callus the Mind**
   - _Pfeffer Power Principle: Callus the Mind_ - How does this consistent effort build mental resilience that translates to other areas of my life?
-- [ ] Eating: Eggs and usual high protein food (compulsory for today and tomorrow) → **Atomic Habits / Naval**
+    Walked upto 8k steps
+- [x] Eating: Eggs and usual high protein food (compulsory for today and tomorrow) → **Atomic Habits / Naval**
   - _Pfeffer Power Principle: Self-Presentation & Brand_ - How does disciplined health management contribute to my overall energy and ability to project confidence?
-- [ ] AG1 Multivitamin drink (as usual) → **Naval**
-- [ ] Check fasting glucose on wake-up; log in Notion → **Dalio**
-- [ ] Prep high-fiber lunch + pre-portioned snacks → **Atomic Habits**
-- [ ] Drink 2 L water (1 L by lunch, 2 L by dinner) → **Naval**
+    Ate only eggs for lunch
+- [x] AG1 Multivitamin drink (as usual) → **Naval**
+      Took AG1 Multivitamin drink and also took Omega-3 Tablets, Energy sustaining
+- [x] Check fasting glucose on wake-up; log in Notion → **Dalio**
+- [x] Prep high-fiber lunch + pre-portioned snacks → **Atomic Habits**
+- [x] Drink 2 L water (1 L by lunch, 2 L by dinner) → **Naval**
 - [ ] 19:00 20-min body-weight circuit + 5-min Goggins mantra → **Callus the Mind**
-- [ ] Install new CGM Sensor for glucose monitoring → **Atomic Habits**
+- [x] Install new CGM Sensor for glucose monitoring → **Atomic Habits**
 
 ## 💰 Personal Finance
 
-- [ ] Brew coffee at home; move €2.50 to “Microgreens Fund” vault → **Atomic Habits**
+- [x] Brew coffee at home; move €2.50 to “Microgreens Fund” vault → **Atomic Habits**
+
   - _Pfeffer Power Principle: Leverage & Compounding_ - How do small, consistent financial habits compound to create greater financial power and security?
-- [ ] Ledger entry: today’s spend vs budget → **Radical Transparency**
+
+- [x] Ledger entry: today’s spend vs budget → **Radical Transparency**
+
   - _Pfeffer Power Principle: Radical Transparency_ - How does clear financial tracking provide a foundation for informed decisions and greater control over resources?
-- [ ] Pay American Express bill (monthly reminder) → **Atomic Habits**
+
+- [x] Pay American Express bill (monthly reminder) → **Atomic Habits**
+  - This is now paid last month
 
 ## 🧘♂️ Mindset & Spirituality
 
-- [ ] 06:45 10-min meditation (as usual) + write 3 gratitude lines → **When**
+- [x] 06:45 10-min meditation (as usual) + write 3 gratitude lines → **When**
   - _Pfeffer Power Principle: Self-Presentation & Brand_ - How does a calm and focused mindset enhance my ability to present myself powerfully?
+    Did meditation at 5:30pm
 - [ ] Prayer (as usual) → **When**
 - [ ] 21:30 Evening journal: biggest needle-mover & lesson → **Dalio Reflection Loop**
   - _Pfeffer Power Principle: Reputation Building_ - How does continuous learning and reflection contribute to my intellectual capital and influence?
 
 ## 🗂 Environment & Routine
 
-- [ ] 14:45 10-min inbox/desktop declutter → **Atomic Habits**
+- [x] 14:45 10-min inbox/desktop declutter → **Atomic Habits**
   - No longer include this task from tomorrow. Instead include minimalism tasks to clean up home
 - [ ] Schedule tomorrow’s garden walk & maintenance during evening journal → **When**
 
@@ -165,3 +183,7 @@
 **“Execute small, high-leverage moves with brutal consistency, leveraging influence and reputation to achieve strategic objectives.”**
 
 Stay relentless.
+
+Shopping list
+
+- Eggs
