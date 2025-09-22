@@ -8,7 +8,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/calendar'] # Full access for creating events
 
-def create_calendar_event(summary, start_time_str, end_time_str, calendar_id='primary', description=''):
+def create_calendar_event(summary, start_time_str, end_time_str, calendar_id='primary', description='', color_id=None):
     """
     Creates an event in the specified Google Calendar.
 
@@ -51,10 +51,44 @@ def create_calendar_event(summary, start_time_str, end_time_str, calendar_id='pr
                 'timeZone': 'Europe/Dublin',
             },
         }
+        if color_id:
+            event['colorId'] = color_id
 
         event = service.events().insert(calendarId=calendar_id, body=event).execute()
         return {"status": "success", "event_id": event.get('id'), "html_link": event.get('htmlLink')}
 
+    except Exception as e:
+        return {"status": "error", "message": str(e)}
+
+def delete_calendar_event(event_id, calendar_id='primary'):
+    """
+    Deletes an event from the specified Google Calendar.
+
+    Args:
+        event_id (str): The ID of the event to delete.
+        calendar_id (str): The ID of the calendar the event belongs to.
+
+    Returns:
+        dict: A dictionary containing the status or an error message.
+    """
+    creds = None
+    if os.path.exists('token.json'):
+        with open('token.json', 'rb') as token:
+            creds = pickle.load(token)
+    if not creds or not creds.valid:
+        if creds and creds.expired and creds.refresh_token:
+            creds.refresh(Request())
+        else:
+            CLIENT_SECRET_FILE = "tokens/client_secret_1090862526299-4j5ntdevkuaicpalm3iqb8dopa2nibnm.apps.googleusercontent.com.json"
+            flow = InstalledAppFlow.from_client_secrets_file(CLIENT_SECRET_FILE, SCOPES)
+            creds = flow.run_local_server(port=0)
+        with open('token.json', 'wb') as token:
+            pickle.dump(creds, token)
+
+    try:
+        service = build('calendar', 'v3', credentials=creds)
+        service.events().delete(calendarId=calendar_id, eventId=event_id).execute()
+        return {"status": "success", "message": f"Event {event_id} deleted successfully."}
     except Exception as e:
         return {"status": "error", "message": str(e)}
 

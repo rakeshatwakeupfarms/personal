@@ -43,7 +43,7 @@ def list_events_today(calendar_id='primary'):
 
         print(f'Getting the upcoming events for today from calendar: {calendar_id}...')
         events_result = service.events().list(calendarId=calendar_id, timeMin=today_start, timeMax=today_end,
-                                            maxResults=10, singleEvents=True,
+                                            maxResults=50, singleEvents=True, # Increased maxResults
                                             orderBy='startTime').execute()
         events = events_result.get('items', [])
 
@@ -55,7 +55,9 @@ def list_events_today(calendar_id='primary'):
             start = event['start'].get('dateTime', event['start'].get('date'))
             event_data.append({
                 "summary": event['summary'],
-                "start": start
+                "start": start,
+                "colorId": event.get('colorId'),
+                "id": event.get('id') # Add event ID for deletion
             })
         return {"status": "success", "events": event_data}
 
@@ -69,7 +71,8 @@ if __name__ == '__main__':
         if result["events"]:
             print("Today's Schedule:")
             for event in result["events"]:
-                print(f"  - {event['summary']} (Start: {event['start']})")
+                color_info = f" (Color ID: {event['colorId']})" if event['colorId'] else ""
+                print(f"  - {event['summary']} (Start: {event['start']}){color_info}")
         else:
             print(result["message"])
     else:
