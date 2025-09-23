@@ -53,9 +53,11 @@ def list_events_today(calendar_id='primary'):
         event_data = []
         for event in events:
             start = event['start'].get('dateTime', event['start'].get('date'))
+            end = event['end'].get('dateTime', event['end'].get('date'))
             event_data.append({
                 "summary": event['summary'],
                 "start": start,
+                "end": end,
                 "colorId": event.get('colorId'),
                 "id": event.get('id') # Add event ID for deletion
             })

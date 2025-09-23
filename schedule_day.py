@@ -1,6 +1,7 @@
 import re
 import datetime
 import sys
+import pytz # Import pytz for timezone handling
 from create_events import create_calendar_event
 from list_events import list_events_today # Import the function to list existing events
 
@@ -11,10 +12,21 @@ def parse_checklist_and_schedule(checklist_path, calendar_id='raaki.88@gmail.com
     """
     # Get existing events for today
     existing_events_result = list_events_today(calendar_id=calendar_id)
-    existing_event_summaries = set()
+    existing_events = []
     if existing_events_result["status"] == "success" and existing_events_result["events"]:
         for event in existing_events_result["events"]:
-            existing_event_summaries.add(event["summary"])
+            # Parse existing event times into datetime objects for comparison
+            try:
+                event_start = datetime.datetime.fromisoformat(event["start"].replace('Z', '+00:00'))
+                event_end = datetime.datetime.fromisoformat(event["end"].replace('Z', '+00:00'))
+                existing_events.append({
+                    "summary": event["summary"],
+                    "start": event_start,
+                    "end": event_end
+                })
+            except ValueError:
+                print(f"Warning: Could not parse datetime for existing event '{event['summary']}'. Skipping for overlap check.")
+                continue
 
     # Dynamically determine the date from the checklist filename
     try:
@@ -40,16 +52,49 @@ def parse_checklist_and_schedule(checklist_path, calendar_id='raaki.88@gmail.com
             end_time_str = match.group(3)
             description = match.group(4).strip()
 
-            # Only schedule if the event is not already in the calendar
-            if summary not in existing_event_summaries:
-                # Combine date and time
-                start_datetime = datetime.datetime.combine(today, datetime.datetime.strptime(start_time_str, '%H:%M').time())
-                end_datetime = datetime.datetime.combine(today, datetime.datetime.strptime(end_time_str, '%H:%M').time())
+            # Combine date and time for new task
+            new_task_start_time = datetime.datetime.strptime(start_time_str, '%H:%M').time()
+            new_task_end_time = datetime.datetime.strptime(end_time_str, '%H:%M').time()
+            
+            # Combine date and time, then localize to Europe/Dublin timezone
+            dublin_tz = pytz.timezone('Europe/Dublin')
+            new_task_start_datetime = dublin_tz.localize(datetime.datetime.combine(today, new_task_start_time))
+            new_task_end_datetime = dublin_tz.localize(datetime.datetime.combine(today, new_task_end_time))
 
+            # Check for overlaps with existing events
+            overlap_found = False
+            for existing_event in existing_events:
+                # Check if new task starts during existing event
+                if existing_event["start"] < new_task_start_datetime < existing_event["end"]:
+                    overlap_found = True
+                    print(f"Skipping '{summary}': Overlaps with existing event '{existing_event['summary']}' ({existing_event['start'].strftime('%H:%M')}-{existing_event['end'].strftime('%H:%M')}).")
+                    break
+                # Check if new task ends during existing event
+                if existing_event["start"] < new_task_end_datetime < existing_event["end"]:
+                    overlap_found = True
+                    print(f"Skipping '{summary}': Overlaps with existing event '{existing_event['summary']}' ({existing_event['start'].strftime('%H:%M')}-{existing_event['end'].strftime('%H:%M')}).")
+                    break
+                # Check if existing event starts during new task
+                if new_task_start_datetime < existing_event["start"] < new_task_end_datetime:
+                    overlap_found = True
+                    print(f"Skipping '{summary}': Overlaps with existing event '{existing_event['summary']}' ({existing_event['start'].strftime('%H:%M')}-{existing_event['end'].strftime('%H:%M')}).")
+                    break
+                # Check if new task completely encompasses existing event
+                if new_task_start_datetime <= existing_event["start"] and new_task_end_datetime >= existing_event["end"]:
+                    overlap_found = True
+                    print(f"Skipping '{summary}': Overlaps with existing event '{existing_event['summary']}' ({existing_event['start'].strftime('%H:%M')}-{existing_event['end'].strftime('%H:%M')}).")
+                    break
+                # Check for exact start/end time match (duplicate summary already handled by existing_event_summaries)
+                if new_task_start_datetime == existing_event["start"] and new_task_end_datetime == existing_event["end"]:
+                    overlap_found = True
+                    print(f"Skipping '{summary}': Exact time match with existing event '{existing_event['summary']}'.")
+                    break
+
+            if not overlap_found:
                 # Format for Google Calendar API (ISO 8601 with timezone)
-                # Assuming Europe/Dublin timezone based on previous context
-                start_iso = start_datetime.isoformat() + '+01:00' # UTC+1:00 for Europe/Dublin
-                end_iso = end_datetime.isoformat() + '+01:00'
+                # The datetime objects are already localized, so isoformat() will include the timezone offset.
+                start_iso = new_task_start_datetime.isoformat()
+                end_iso = new_task_end_datetime.isoformat()
 
                 color_id_to_use = '6' # Google Calendar color ID for orange for new events
 
@@ -58,10 +103,17 @@ def parse_checklist_and_schedule(checklist_path, calendar_id='raaki.88@gmail.com
 
                 if event_result["status"] == "success":
                     scheduled_events.append(f"'{summary}' (Link: {event_result['html_link']})")
+                    # Add newly scheduled event to existing_events for subsequent overlap checks within the same run
+                    existing_events.append({
+                        "summary": summary,
+                        "start": new_task_start_datetime,
+                        "end": new_task_end_datetime
+                    })
                 else:
                     print(f"Error scheduling '{summary}': {event_result['message']}")
             else:
-                print(f"Event '{summary}' already exists in calendar. Skipping.")
+                # If overlap found, it was already printed, so just continue
+                pass
 
     return scheduled_events
 

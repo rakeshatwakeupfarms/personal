@@ -6,7 +6,7 @@ from google.auth.transport.requests import Request
 from google_auth_oauthlib.flow import InstalledAppFlow
 
 # If modifying these scopes, delete the file token.json.
-SCOPES = ['https://www.googleapis.com/auth/calendar'] # Full access for creating events
+SCOPES = ['https://www.googleapis.com/auth/calendar.events'] # Scope for creating and modifying events, NOT deleting
 
 def create_calendar_event(summary, start_time_str, end_time_str, calendar_id='primary', description='', color_id=None):
     """
@@ -60,17 +60,7 @@ def create_calendar_event(summary, start_time_str, end_time_str, calendar_id='pr
     except Exception as e:
         return {"status": "error", "message": str(e)}
 
-def delete_calendar_event(event_id, calendar_id='primary'):
-    """
-    Deletes an event from the specified Google Calendar.
-
-    Args:
-        event_id (str): The ID of the event to delete.
-        calendar_id (str): The ID of the calendar the event belongs to.
-
-    Returns:
-        dict: A dictionary containing the status or an error message.
-    """
+if __name__ == '__main__':
     creds = None
     if os.path.exists('token.json'):
         with open('token.json', 'rb') as token:
@@ -84,16 +74,4 @@ def delete_calendar_event(event_id, calendar_id='primary'):
             creds = flow.run_local_server(port=0)
         with open('token.json', 'wb') as token:
             pickle.dump(creds, token)
-
-    try:
-        service = build('calendar', 'v3', credentials=creds)
-        service.events().delete(calendarId=calendar_id, eventId=event_id).execute()
-        return {"status": "success", "message": f"Event {event_id} deleted successfully."}
-    except Exception as e:
-        return {"status": "error", "message": str(e)}
-
-if __name__ == '__main__':
-    # Example usage (will be replaced by parsing logic)
-    # This will require re-authorization due to changed scopes.
-    print("This script is designed to be called by another script after parsing the checklist.")
-    print("It will require re-authorization for full calendar access.")
+    print("Authorization successful. You can now use this script via schedule_day.py.")
